@@ -1,0 +1,36 @@
+body{
+    background-color: red;
+    margin: 0;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(219, 148, 148, 0.667),transparent,blue);
+    margin: 0;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-top: 6px solid #900;
+
+}
+
+.box2{
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(219, 148, 148, 0.667),blue);
+    margin: 0;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-top: 6px solid #900;
+}
+.box3{
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(rgba(219, 148, 148, 0.667),rgb(128, 128, 221));
+    margin: 0;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-top: 6px solid #900;
+}

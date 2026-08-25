@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    background-color: #bbb;
+    font-family: sans-serif;
+}
+
+/* .box{
+    margin: 0;
+    margin: auto;
+    width: 200px;
+    height: 120px;
+    background-color: #fff;
+    margin-top: 50px;
+    position: relative;
+    border: 1px solid black;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: anywhere;
+} */
+
+.box{
+    margin: auto;
+    width: 250px;
+    height: 270px;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 1px solid black;
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+}
+
+h1{
+    text-wrap: balance;
+}

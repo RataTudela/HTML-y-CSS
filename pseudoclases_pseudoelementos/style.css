@@ -1,0 +1,165 @@
+h1{
+    color: #333;
+    margin:30px;
+    line-spaceing: 1.5;
+}
+
+h1:hover{
+    color: #555;
+    text-decoration: underline;
+}
+
+h1:active{
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+/* SELECCIONANDO EL PRIMER LI */
+li:first-child{
+    color:red;
+}
+
+/* SELECCIONANDO EL ÚLTIMO LI */
+li:last-child{
+    color: blue;
+}
+
+/* SELECCIONANDO LOS ELEMENTOS ENTRE EL PRIMER Y EL ÚLTIMO */
+li:nth-child(2){
+    color: green;
+}
+/* SELECCIONANDO CADA PAR ELEMENTO */
+
+li:nth-child(2n){
+    color: purple;
+}
+
+/* SELECCIONANDO POR ELEMENTO */
+li:nth-of-type(2){
+    color: orange;
+}
+
+/* EXCLUIR ELEMENTOS */
+
+/* .lista li:not(.excluir){
+    color: brown;
+} */
+
+/* SELECCIONANDO ELEMENTOS VACÍOS */
+div{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+div:empty{
+    border:none;
+}
+
+/* CHECKBOX :checked */
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    color: red;
+}
+
+input[type="checkbox"]:checked{
+    margin: 40px;
+}
+
+/* SELECCIONADO ENLACES NO VISITADOS */
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: purple;
+    text-decoration: none;
+}
+
+/* input valido o no */
+
+input:valid{
+    color: green;
+}
+
+input:invalid{
+    color: red;
+}
+
+/* WORD, IS Y HAS */
+
+section .elemento1, section .elemento2, section .elemento3{
+    color: blue;
+}
+
+section:is(.elemento1, .elemento2, .elemento3){
+    color: rgb(127, 17, 218);
+}
+
+section:where(.elemento1, .elemento2, .elemento3){
+    color: rgb(218, 17, 127);
+}
+
+section:has(.elemento10, .elemento1){
+    background-color: rgb(17, 218, 127);
+}
+
+
+/* EJEMPLOS DE USO DE HAS */
+
+label:has(input:invalid), input:invalid{
+    color: red;
+}
+
+label:has(input:valid), input:valid{
+    color: green;
+}
+
+/* first-letter */
+
+/* PSEUDO ELEMENTOS */
+
+h1::first-letter{
+    color: red;
+    font-size: 3em;
+    letter-spacing: 8px;
+}
+
+div::first-line{
+    color:red;
+}
+
+/* SELECTION */
+
+div::selection{
+    background-color: rgb(122, 124, 119);
+}
+
+/* modficar placeholder */
+
+input::placeholder{
+    background-color: #000;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* cambiar marker */
+
+li:marker{
+    color: aqua;
+}
+
+/* BEFORE */
+
+li::before{
+    content: 'Elemento: ';
+    color: red;
+}
+
+li::after{
+    content:' Despues';
+    color: blue;
+}

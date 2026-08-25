@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>METODOLOGIA BEM</h1>
+    <ul class="lista">
+        <!-- esto no deberia decir ingrediente sino que segun metodologia bem deberia estar en lista -->
+        <!-- EJEMPLO DE COMO NO DEBERIA SER -->
+        <!-- <li class="ingrediente-importante">HARINA</li> -->
+        <!--  -->
+        <!-- Como deberia ser -->
+        <li class="lista__item ">HARINA</li>
+        <!-- AQUI SE LE AGREGA LA MODIFICACION CON UNA NUEVA CLASE-->
+        <li class="lista__item item--insalubre">PAN</li>
+        <li class="lista__item">QUESO</li>
+        <li class="lista__item item--saludable">BEACON</li>
+    </ul>
+
+    <ul class="lista lista--vieja">
+        <!-- esto no deberia decir ingrediente sino que segun metodologia bem deberia estar en lista -->
+        <!-- EJEMPLO DE COMO NO DEBERIA SER -->
+        <!-- <li class="ingrediente-importante">HARINA</li> -->
+        <!--  -->
+        <!-- Como deberia ser -->
+        <li class="lista__item ">HARINA</li>
+        <!-- AQUI SE LE AGREGA LA MODIFICACION CON UNA NUEVA CLASE-->
+        <li class="lista__item item--insalubre">PAN</li>
+        <li class="lista__item">QUESO</li>
+        <li class="lista__item item--saludable">BEACON</li>
+    </ul>
+
+    <ul class="lista">
+        <li class="lista__item ">HARINA</li>
+        <li class="lista__item item--insalubre">PAN</li>
+        <li class="lista__item">QUESO</li>
+        <li class="lista__item item--saludable">BEACON</li>
+    </ul>
+</body>
+</html>

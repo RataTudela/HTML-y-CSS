@@ -1,0 +1,41 @@
+h1 {
+    color:rgb(52, 133, 226);
+    font-family:sans-serif,tahoma;
+    font-size:40px;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: underline;
+}
+p {
+    color:blue;
+    font-family:montserrat, sans-serif;
+    font-size:40px;
+    font-weight:500;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}j
+
+li {
+    color:green;
+    font-family:sans-serif,tahoma;
+    font-size:40px;
+    font-weight:bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.item {
+    color:orange;
+    font-family:sans-serif,tahoma;
+    font-size:40px;
+    font-weight:bold;
+}
+
+#huevo {
+    color:purple;
+    font-family:sans-serif,tahoma;
+    font-size:40px;
+    font-weight:bold;
+}

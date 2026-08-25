@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Metatags -->
+    <meta name="description" content="Va a ser una recopilacion de HTML intermedio">
+    <meta name="keywords" content="HTML,INTERMEDIO,META,DETAILS,SUMMERY,LISTS,LAZY LOAD, INPUTS, COMENTARIOS, TEXTAREAS,LABELS,DATALISTS,LISTS,ETC.">
+    <meta name="authors" content="Benjamin">
+    <meta name="robots" content="nosnipped">
+    <meta name="robots" content="noarchive">
+    <meta name="robots" content="noimageindex">
+    <meta name="title" content="Venta de perros">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <!-- FAVICON -->
+    <link rel="icon" class="icon" href="../imagenes/descarga.webp">
+    <title>Contenido Intermedio</title>
+</head>
+<body> 
+    <!-- HEADER -->
+        <header role="banner">
+            <!-- LOGO -->
+                <img src="../imagenes/galaxia.webp" fetchpriority="high" alt="Logo de Galaxia" width="80" height="80">
+                <!-- NAVBAR -->
+                <nav>
+                    <ul>
+                        <li><a href="#forms">Ir a Formularios</a></li>
+                        <li><a href="#select">Ir a Select</a></li>
+                        <li><a href="#fieldset">Ir a Fieldset</a></li>
+                        <li><a href="#details">Ir a Details</a></li>
+                        <li><a href="https://facebook.com" rel="noopener noreferrer nofollow" target="_blank">Ir a Facebook</a></li>
+                        <li><a href="#tables">Ir a Tablas</a></li>
+                        <li><a href="#audio-video">Ir a Audio y Video</a></li>
+                        <li><a href="#aside">Ir a Aside</a></li>
+                        <li><a href="#images">Ir a Imagenes</a></li>
+                    </ul>  
+                </nav>
+        </header>
+    <!-- BODY/MAIN COMO TAL -->
+    <main class="contenedor">
+        <!-- TEXTAREAS AVANZADAS -->
+        <section class="textareas-advance">
+            <div class="textareas">
+                <h2 id="forms">FORMULARIOS, TEXTAREA AND LABEL</h2>
+                <form>
+                    <div class="form_padding">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre"  required placeholder="Benja Moe">
+                    </div>
+                    <div class="form_padding">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="hola@gmail.com">
+                    </div>
+                    <div class="form_padding">
+                        <label for="asunto">Asunto</label>
+                        <textarea rows="7" name="asunto"  required id="asunto" placeholder="Mi asunto es..."></textarea>
+                    </div>
+                    <div class="form_padding">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- SELECT, DATALIST AND OPTIONS -->
+        <section class="select_datalist_options">
+            <div class="selectdo">
+                <h2 id="select">SELECT, DATALIST AND OPTIONS</h2>
+                <div class="form_padding">
+                    <label for="opciones">Select</label>
+                    <select name="opciones" id="opciones">
+                        <option value="opcion1">Opcion 1</option>
+                        <option value="opcion2">Opcion 2</option>
+                        <option value="opcion3">Opcion 3</option>
+                    </select>
+                </div>
+                <div class="form_padding">
+                    <label for="opciones-datalist">Datalist</label>
+                    <input List="Referente" name="opciones-datalist" id="opciones-datalist" placeholder="Selecciona una opcion">
+                    <datalist id="Referente" name="type_of_user">
+                        <option value="Hola">una forma de saludar</option>
+                        <option value="Que miras bobo">Algo que dijo messi</option>
+                        <option value="Haber si anotamos un golito">Perrichi</option>           
+                    </datalist>
+                </div>
+                <img class="imagen-rata" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91k3r0UayXj6M_t-S-RYSwx2aG6gghH1sUtWrvq6Y0Q&s=10" width="200" height="200" alt="Imagen de una Rata diciendo Te la Kreiste We">          
+        </section>
+        <!-- FIELDSET AND LEGEND -->
+        <section class="textareas-advance">
+            <div class="textareas">
+                <div class="textareas">
+                <h2 id="fieldset">FIELDSET AND LEGEND</h2>
+                <form>
+                <fieldset>
+                    <legend>Informacion Basica</legend>
+                    <div class="form_padding">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre"  required placeholder="Benja Moe">
+                    </div>
+                    <div class="form_padding">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="hola@gmail.com">
+                    </div>
+                    <div class="form_padding">
+                        <label for="asunto">Asunto</label>
+                        <textarea rows="7" name="asunto"  required id="asunto" placeholder="Mi asunto es..."></textarea>
+                    </div>
+                </fieldset>
+                    <div class="form_padding">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section>
+        <!-- DETAILS AND SUMMARY -->
+        <section class="select_datalist_options">
+            <div class="selectdo">
+                <h2 id="details">DETAILS AND SUMMARY</h2>
+                <details>
+                    <summary>Detalles</summary>
+                    <p>Este es un ejemplo de como usar la etiqueta details y summary, que nos permite mostrar u ocultar contenido de manera interactiva. Al hacer clic en el resumen, se despliega el contenido adicional.</p>
+                </details>
+                <details>
+                    <summary>Mas Detalles</summary>
+                    <p>Este es otro ejemplo de como usar la etiqueta details y summary, que nos permite mostrar u ocultar contenido de manera interactiva. Al hacer clic en el resumen, se despliega el contenido adicional.</p>
+                </details>
+                <details>
+                    <summary>Detalles Finales</summary>
+                    <p>Este es un tercer ejemplo de como usar la etiqueta details y summary, que nos permite mostrar u ocultar contenido de manera interactiva. Al hacer clic en el resumen, se despliega el contenido adicional.</p>
+                </details>
+            </div>
+        </section>
+        <!-- AUDIO Y VIDEO -->
+        <section class="audio_video">
+            <div class="selectdo">
+                <h2 id="audio-video">AUDIO Y VIDEO</h2>
+                <video src="../audio_video/videoplayback.mp4" controls loop autoplay muted width="400" height="300" preload="metadata" poster="../imagenes/galaxia.webp"></video>
+                    <track src="captions.vtt" default kind="captions" srclang="es" label="español">
+                </video>
+                <audio src="palaselec.mp4" controls loop autoplay></audio>
+            </div>
+        </section>
+    </main>
+        <!-- TABLAS -->
+        <section class="tables">
+            <table id="tables" role="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Benjamín</td>
+                        <td>20</td>
+                        <td>benja@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>25</td>
+                        <td>Juan@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>30</td>
+                        <td>Pedro@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Promedio</th>
+                        <td class="promedio">25</td>
+                        <td>Correos Validos</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- ASIDE -->
+    <aside id="aside" class="sidebar-info">
+            <h3>Informacion Adicional</h3>
+            <hr>
+            <p>Este sitio web es una recopilación de ejemplos de HTML intermedio, incluyendo formularios, selectores, fieldsets, detalles, audio y video, imágenes y tablas. Está diseñado para ayudar a los desarrolladores web a aprender y practicar sus habilidades en HTML.</p>
+            <p>Se recomienda utilizar un navegador moderno y actualizado para una mejor experiencia de usuario.
+            <hr>
+            <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer nofollow">Ir a NASA</a>
+            <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer nofollow">Ir a W3Schools</a>
+        </aside>   
+    <!-- IMAGENES LAZY LOADING -->
+        <div class="contenedores_imagens" id="images">
+            <img class="imagen-galaxias" loading="lazy" src="../imagenes/descarga.png" alt="Imagen de una Galaxia" width="200" height="200">
+            <img class="imagen-galaxias" loading="lazy" src="../imagenes/galaxia.webp" alt="Imagen de una Galaxia" width="200" height="200">
+            <img class="imagen-galaxias" loading="lazy" src="../imagenes/descarga.webp" alt="Imagen de una Galaxia" width="200" height="200">
+        </div> 
+        <footer></footer>
+</body>
+</html>

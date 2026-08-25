@@ -1,0 +1,24 @@
+body{
+    background-color: #e23;
+    font-family: montserrat;
+    font-weight: 500;
+}
+
+h1{
+    text-align: fit-content;
+}
+
+.box{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    /* es esto basicamente :v */
+    background: rgb(32, 248, 13);
+    margin: 20px;
+    padding: 40px;
+
+    /* no visto en el curso, es para centar el contenido */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

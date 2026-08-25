@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">+
+    <link rel="stylesheet" href="style.css">
+    <title>Enlaces Avanzados</title>
+</head>
+<body>
+    <form>
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+                <div class="form_margin">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Jhon Doe">
+                </div>
+                <div class="form_margin">
+                    <label>Email</label>
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="form_margin">
+                    <label>Asunto</label>
+                    <input type="text" placeholder="El asunto es...">
+                </div>
+        </fieldset>
+            <div class="form_margin">
+                <label for="select">Tipo de Usuario</label>
+                <select id="select">
+                    <option value="1">Numero 1</option>
+                    <option value="2">Numero 2</option>
+                    <option value="3">Numero 3</option>
+                </select>
+            </div>
+            <div class="form_margin">
+                <label for="Referente">Referente</label>
+                <input list="referente" id="Referente">
+                <datalist id="referente">
+                    <option value="Benja">Aprendiendo programacion</option>
+                    <option value="Rata">Animal de 4 patas, considerado plaga</option>
+                    <option value="Pilla">Adjetivo que describe a alguien astuto, que piensa bien las jugadas</option>
+                </datalist>
+            </div>
+            <div class="form_margin">
+                <label for="comentarios">Comentarios</label>
+                <textarea row="6" id="comentarios" placeholder="Pone tu texto aca"></textarea>
+            </div>
+            <div class="form_margin">
+                <Label>Preguntas Frecuentes</Label>
+                <details>
+                    <summary>El nacho es wekito?</summary>
+                        <ul>
+                            <li>Efectivamente</li>
+                            <li>Es Ultra</li>
+                            <li>Wekito</li>
+                        </ul>
+                </details>
+            </div>
+            <div class="form_margin">
+                <label for="checkbox">Acepto los <a href="terms.html">terminos y condiciones</a></label>
+                <input type="checkbox" id="checkbox">
+            </div>
+    </form>
+</body>
+</html>

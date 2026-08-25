@@ -1,0 +1,34 @@
+
+.cont{
+    margin:auto;
+    width: 80vw;
+    border: 2px solid black;
+    position: relative;
+    margin: 0;
+}
+
+.cont__box{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    position: relative;
+}
+
+.box--blue{
+    background-color: blue;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.box--red{
+    background-color: rgb(255, 0, 0);
+}
+
+.modal{
+    background-color: black;
+    height: 100vh;
+}

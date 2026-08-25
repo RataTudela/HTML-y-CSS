@@ -1,0 +1,58 @@
+li{
+    color: gray;
+}
+
+.ingrediente_faltante{
+    color: red;
+}
+
+#ingrediente_especial{
+    color: green;
+}
+
+img[src="../imagenes/galaxia.webp"]{
+    width: 200px;
+    height: 200px;
+}
+
+img[src$="webp"]{
+    width: 1000px;
+    height: 200px;
+}
+
+img[src^="../imagenes/"]{
+    width: 500px;
+    height: 200px;
+}
+/* SELECTOR DE DESCENDIENTE */
+ul li{
+    color: blue;
+}
+
+ul li strong{
+    color: orange;
+}
+
+/* SELECTOR DE HIJO DIRECTO */
+ul > strong{
+    color: purple;
+}
+
+li > em{
+    color: pink;
+}
+
+/* SELECTOR ADYACENTE */
+
+h1 + p{
+    color: brown;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+h1 ~ p{
+    color: yellow;
+}
+
+h2 + p{
+    color: black;
+}

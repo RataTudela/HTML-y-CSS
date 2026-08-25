@@ -1,0 +1,40 @@
+.box{
+    background-color: rgb(148, 146, 143);
+    width: 360px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 0 40px 0 #000f;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+h2{
+    color: rgb(99, 95, 95);
+    text-shadow: 0 0 4px rgb(236, 193, 193);
+    text-align: start;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    text-shadow: 0 0 4px rgb(236, 193, 193);
+}
+
+img{
+    text-align: center;
+    width: 150px;
+    filter: drop-shadow(0 0 5px rgb(84, 82, 211))
+}
+
+
+/* img{
+    text-align: center;
+    border-radius: 100%;
+    width: 150px;
+    box-shadow: 0 0 40px 0;
+/*  */

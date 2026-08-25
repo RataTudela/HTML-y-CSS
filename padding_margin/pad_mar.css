@@ -1,0 +1,40 @@
+
+.formulario {
+    background: red;
+    /* padding: 20px; */
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    padding: 30px 40px 30px 30px;
+    
+
+
+}
+
+.box1{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.box2{
+    background: green;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.formulario-input {
+    padding: 10px 10px;
+    width: 90%;
+}
+
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgb(79, 79, 233);
+    width: 50%;
+    border-color: red;
+}

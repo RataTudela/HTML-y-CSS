@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: 'montserrat',sans-serif;
+}
+
+.flexbox{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+.flex-item:last-child{
+    background-color: black;
+}
+.flex-item:first-child{
+    background-color: #f77;
+}

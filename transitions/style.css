@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    transition-property: background-color, margin, font-size;
+    transition-duration: 2s;
+    border-radius: 12px; 
+    padding-top: 5px;
+    animation: recorrido 6s ease-in-out infinite, cambiarColor 6s ease-in-out infinite, cambiarColorFondo 6s ease-in-out infinite;
+}
+
+audio{
+    margin-top: 5px;
+    width: 60%;
+    height: 30px;
+}
+
+.box:hover{
+    background-color: #00b4ff;
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+.box::before{
+    content: "Feet, don't fail me now";
+    animation: cambiarTexto 6s steps(1) infinite;
+}
+
+@keyframes recorrido {
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(0, 150px);
+    }
+    50%{
+        transform: translate(-150px, 150px);
+    }
+    75%{
+        transform: translate(150px, 150px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes cambiarTexto {
+    0%, 100%{ content: "Feet, don't fail me now"; }
+    25%{ content: "I got to stand my ground"; }
+    50%{ content: "And though I'm down for trying, I am better in denial"; }
+    75%{ content: "So I hush, don't make a sound"; }
+}
+
+@keyframes cambiarColor{
+    0%, 100%{color: red;}
+    25%{color: #00b4ff;}
+    50%{color: blueviolet;}
+    75%{color: pink;}
+}
+
+@keyframes cambiarColorFondo{
+    0%, 100%{background-color: #00b4ff;}
+    25%{background-color: rgb(161, 91, 228);}
+    50%{background-color: red;}
+    75%{background-color: #4af;}
+}
+
+
+.box--prueba{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    margin-top: 200px;
+    /* transition-property: left;
+    transition-duration: 1s;
+    transition-delay: 2s;
+    transition-timing-function: ease-out; */
+    transition: left 1s 2s ease-out;
+    border-radius: 12px; 
+    position: relative;
+    left: 0;
+}
+
+body:hover .box--prueba{
+    left: 400px;
+}
+

@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid black;
+    /* outline-width: 10px;
+    outline-color: blue;
+    outline-style: solid;
+    outline-offset: 10px; */
+    outline: 5px solid #000;
+    transition-property: outline;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.box:hover{
+    outline: 10px solid #5af;
+}
+
+input{
+    margin: auto;
+    border: none;
+    border-top: 2px solid #5af;
+    outline: 2px solid #5af;
+    outline-offset: 5px;
+    padding: 6px;
+    transition: outline .2s, 
+    outline-offset .2s;
+}
+
+input::placeholder{
+    color: #5af;
+    transition: placeholder 2s ease;
+}
+
+
+input:focus-visible::placeholder{
+    color: blue;
+}
+
+input:focus-visible{
+    border-top: 2px solid blue;
+    outline: 3px solid blue;
+    color: blue;
+}
+

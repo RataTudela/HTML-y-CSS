@@ -1,0 +1,43 @@
+
+.lista{
+    border: 1px solid yellowgreen;
+}
+
+/* .ingrediente{
+    color: gray;
+    list-style: square;
+    margin-bottom: 5px;
+}
+.ingrediente-importante{
+    color: rgb(116, 64, 240);
+    list-style: square;
+    margin-bottom: 5px;
+}
+.ingrediente-danino{
+    color: rgb(231, 7, 7);
+    list-style: square;
+    margin-bottom: 5px;
+} */
+
+/* AHORA CON METODOLOGIA BEM COMO VEMOS HICIMOS LO MISMO PERO CON MUCHO MENOS*/
+.lista__item{
+    color: gray;
+    list-style: square;
+    margin-bottom: 5px;
+}
+
+.item--insalubre{
+    color: red;
+}
+
+.item--saludable{
+    color: green;
+}
+
+/* MODIFICAR OTRA COSA QUE NO SEA UN ELEMENTO 
+DENTRO DE OTRO PERO SI QUE SE REPITA EN ESTE CASO OTRA LISTA POR EJEMPLO */
+
+.lista--vieja{
+    opacity: 0.3;
+    background-color: #ccc;
+}

@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body:has(.box:active){
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+
+h2{
+    font-size: 14px;
+}
+.box{
+    margin: auto;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    border-radius: 5px;
+    font-family: sans-serif;
+    /* me lo dio gemini */
+    transition: transform 0.4s ease, box-shadow 0.2s ease;
+}
+
+.box--blue{
+    background-color: blue;
+    bottom: 140px;
+    z-index: 2;
+}
+
+.box--red{
+    background-color: rgb(255, 0, 0);
+    bottom: 280px;
+    z-index: 3;
+}
+
+.box--green{
+    background-color: rgb(0, 255, 34);
+    bottom: 420px;
+    z-index: 4;
+}
+
+.box:active {
+    /* importante entre mayor el valor de z index mas importante no al revez */
+    z-index: 999 !important; 
+    transform: scale(1.3) translateY(-20px); 
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5); 
+}
+

@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: #8a8888;
+}
+/* FLEX-GROW: CUANTO CRECEN LAS CAJAS*/
+
+.flex__box{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+}
+
+.flex__items{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: sans-serif;
+    order: 1;
+    flex-grow: 1;
+}
+
+
+.flex__items:first-child{
+    background-color: rosybrown;
+    order: 0;
+    flex-grow: 2;
+}
+
+.flex__items:last-child{
+    background-color: rgb(102, 1, 1);
+    order: 4;
+    flex-grow: 6;
+}
+
+
+/* FLEX-SHRINK: CUANTO SE ACHICA LAS CAJAS*/
+
+.flex--shrinkbox{
+    display: flex;
+    flex-flow: row;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+}
+
+.flex--shrink{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: sans-serif;
+    order: 1;
+    flex-shrink: 1;
+    /* CON FLEX-SHRINK 0 LAS CAJAS YA NO DISMINUYEN SU TAMAÑO,
+    POR LO QUE SE SALE DEL CONTENEDOR */
+    /* flex-shrink: 0; */
+}
+
+
+.flex--shrink:first-child{
+    background-color: rosybrown;
+    order: 0;
+    flex-shrink: 5;
+}
+
+.flex--shrink:last-child{
+    background-color: rgb(102, 1, 1);
+    order: 4;
+}
+
+/* FLEX-BASIS */
+
+.flex--basisbox{
+    display: flex;
+    flex-flow: row;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+}
+
+.flex--basis{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: sans-serif;
+    order: 1;
+    flex-basis: 300px;
+}
+
+.flex--basis:first-child{
+    background-color: rosybrown;
+    order: 0;
+}
+
+.flex--basis:last-child{
+    background-color:  rgb(102, 1, 1);
+    order: 4;
+}
+
+
+/* PROBANDO COSAS */
+
+
+.flex--probandobox{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: white;
+}
+
+.flex--probando{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-family: sans-serif;
+    order: 1;
+    flex-basis: 300px;
+    flex: 1 1 300px;
+}
+
+.flex--probando:first-child{
+    background-color: rosybrown;
+    order: 0;
+}
+
+.flex--probando:last-child{
+    background-color:  rgb(102, 1, 1);
+    order: 4;
+    flex-shrink: 0;
+    flex-grow: 1;
+}

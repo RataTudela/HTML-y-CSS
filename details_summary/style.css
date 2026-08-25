@@ -1,0 +1,25 @@
+body{
+    background-color: #333;
+    color: #ddd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+details{
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    box-sizing: content-box;
+}
+
+summary{
+    background-color: transparent;
+    padding: 9px;
+    box-sizing: content-box;
+}
+
+p{
+    padding: 0px 0px 0px 25px;
+    margin-top: 0px;
+}
+ul{
+    font-weight: 100px;
+}

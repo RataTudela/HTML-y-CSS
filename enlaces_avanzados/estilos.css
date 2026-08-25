@@ -1,0 +1,78 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    box-sizing: border-box;
+    background-color: #0f0e0e;
+    width: 80vw;
+    max-width: 900px;
+    max-height: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #222222;
+    box-shadow: 0px 0px 20px #1f1f1f;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+p {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.btn-terminos{
+    background-color: #222222;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 8px;
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    color: #747679;
+    border: none;
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+}
+
+.btn-facebook{
+    font-weight: bold;
+    color: #ebebeb;
+    background-color: #023a94;
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.btn-gmail{
+    font-weight: bold;
+    color: #ebebeb;
+    background-color: #f13131;
+    border-left: 1px solid #f18c8c;
+    border-top: 1px solid #fa8686;
+}
+
+.btn-telefono{
+    font-weight: bold;
+    color: #ebebeb;
+    background-color: #149203;
+    border-left: 1px solid #81f787;
+    border-top: 1px solid #81f787;
+}

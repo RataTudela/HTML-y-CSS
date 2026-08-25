@@ -1,0 +1,12 @@
+body{
+    color: blue;
+}
+
+div{
+    color: red;
+}
+
+p{
+    color: unset;
+    font-family: inherit;
+}

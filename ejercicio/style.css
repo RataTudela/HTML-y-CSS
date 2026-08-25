@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+h1{
+    color: black;
+    padding-top:30px;
+    font-family: montserrat;
+    font-weight: 500;
+}
+
+h2{
+    font-weight: lighter;
+    color: white;
+}
+
+p{
+    padding: 10px;
+    background: rgb(75, 72, 72);
+    height: 200px;
+    text-align: justify;
+    word-wrap: break-word;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 5px;
+}
+.box{   
+    background: rgb(238, 58, 58);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px 30px 20px 0px;
+    /* border: 3px solid rgb(126, 255, 190); */
+    border-top: 3px solid rgb(126, 255, 190);
+    border-right: 3px solid rgb(126, 255, 190);
+    height: 493px;
+}
+
+.formulario {
+    background: rgb(75, 72, 72);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 17px 0px;
+    height: 43px;
+    width: auto;
+}
+
+.input{
+    width: auto;
+    padding: 5px;
+    border: none;
+    border-top: 1px solid greenyellow;
+    background: transparent;
+    border-left: 1px solid greenyellow;
+    color:greenyellow;
+}
+

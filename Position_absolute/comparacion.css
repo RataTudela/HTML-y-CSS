@@ -1,0 +1,56 @@
+.cont{
+    border: 2px solid black;
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cont__box{
+    height: 30%;
+    width: 30%;
+    background-color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* SI SOLO TIENEN EL ATRIBUTO NO CAMBIA NADA PERO VAMOS A VER QUE PASA SI INTENTAMOS CENTRAR EL DIV POR EJEMPLO */
+
+/* COMO VEMOS EN EL RELATIVE NO CAMBIA DE NADA PUESTO QUE ESTAMOS DICIENDO
+MUEVETE 0 PX CON RESPECTO A TU POSICION ORIGINAL */
+.box--relative{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/* PERO QUE PASA SI VAMOS AL ABSOLLUTE */
+.box--absolute{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+button{
+    margin: auto;
+}
+
+
+.animacion{
+    width: 30px;
+    height: 30px;
+    background-color: #3af;
+    margin: auto;
+    position: relative;
+    transition: 2s;
+    box-shadow: 0px 0px 25px #1af;
+    border-radius: 50%;
+}
+
+.animacion:hover{
+    background-color: rgb(138, 0, 119);
+    transition: 2s;
+    box-shadow: 0px 0px 25px #f0f;
+}

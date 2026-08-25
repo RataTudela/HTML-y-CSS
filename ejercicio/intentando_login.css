@@ -1,0 +1,108 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1491466424936-e304919aada7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8MTkyMHgxMDgwJTIwZm9uZG8lMjBkZSUyMHBhbnRhbGxhfGVufDB8fDB8fHww");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-size: 100%;
+    font-family: montserrat,sans-serif;
+    background-attachment: fixed;
+}
+
+
+#box-login {
+    background: rgba(15, 23, 42, 0.75);
+    height: 65vh, fit-content;
+    width: 60vh;
+    margin: auto;
+    margin-top: 95px;
+    padding: 5px 50px 50px 50px;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 0px;
+    border-right: 12px solid rgb(1, 22, 46);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+p{
+    text-align: center;
+    color:  #94A3B8;
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.forms{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 80%;
+
+}
+
+.input{
+    font-family: sans-serif;
+    margin: auto;
+    background: transparent;
+    background-color: #1E293B;
+    width: 100%;
+    border: none;
+    border-top: 1px solid#F8FAFC;
+    border-left: 1px solid #F8FAFC;
+    height: 20px;
+}
+
+#submit{
+    margin: auto;
+    border-radius: 10px;
+    background: transparent;
+    width: 70%;
+    color: #E11D48;
+}
+
+.social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.divider{
+    margin-bottom: 10px;
+    color: #94A3B8;
+}
+
+.btn-social{
+    border-radius: 8px;
+    border: none;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-facebook{
+    background-color: #1877F2;
+}
+
+.btn-google{
+    background-color: #EA4335;
+}
+
+.logo-imagen{
+    display:block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0;
+}
+
+a{
+    margin: auto;
+    font-size: 12px;
+    color: #94A3B8;
+}
