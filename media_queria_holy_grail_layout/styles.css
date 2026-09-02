@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row;
+    background-color: #8f8c8c;
+    flex-grow: 1;
+}
+
+.flex__item{
+    background-color: rgb(204, 139, 54);
+    min-height: 200px;
+    border: 1px solid red
+}
+
+@media screen and (max-width:500px){
+    .flexbox{
+        flex-flow: column;
+    }
+}

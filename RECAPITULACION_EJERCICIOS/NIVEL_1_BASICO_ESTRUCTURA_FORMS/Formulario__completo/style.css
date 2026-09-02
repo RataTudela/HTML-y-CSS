@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.forms__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 420px;
+    min-height: 500px;
+    padding: 24px;
+    text-align: center;
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+.padding {
+    padding: 12px 6px;
+    margin-top: 20px;
+}
+input , textarea, select{
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-radius: 12px;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+}
+fieldset{
+    padding: 12px 6px;
+    border: 1px solid gray;
+}
+
+input , textarea{
+    padding: 4px;
+}
+
+textarea{
+    resize: none;
+}

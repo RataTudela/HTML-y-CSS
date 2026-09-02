@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+    background-color: rgb(216, 216, 214);
+}
+
+header, footer {
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    padding: 0;
+    background-color: #48a;
+}
+
+.main-navbar ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.main-navbar li {
+    list-style: none;
+    margin: 4px;
+}
+
+.main-navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 6px 9px;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+/* MAIN-SECTION (Consolidado) */
+.main-wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto; /* Centra el contenido en pantallas > 1024px */
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para diseño móvil primero */
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+aside, main {
+    padding: 10px 12px;
+    flex-basis: 0;
+    background-color: #fff;
+}
+
+aside {
+    flex-grow: 1;      /* Permite que crezca si hay espacio disponible */
+    flex-shrink: 1;    /* Permite que se reduzca mientras sea mayor al mínimo */
+    min-width: 250px;  /* 2. LÍMITE RÍGIDO: No se achicará a menos de 250px */
+}
+
+.main-wrapper aside {
+    flex-grow: 1;
+}
+
+.secondary-navbar {
+    min-width: 10rem;
+    text-align: center;
+}
+
+.secondary-navbar ul { padding: 0; }
+.secondary-navbar li { list-style: none; }
+.secondary-navbar a {
+    color: #48a;
+    display: inline-block;
+    padding: 6px 10px;
+}
+
+aside:last-child {
+    min-width: 12rem;
+}
+
+main {
+    min-width: 300px;
+    flex-grow: 2;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+}
+@media screen and (min-width: 480px) {
+    aside:last-child {
+        display: block; /* Se muestra el aside derecho en pantallas >= 480px */
+    }
+}
+
+
+@media screen and (min-width: 801px) {
+    .main-wrapper {
+        flex-direction: row;
+    }
+}

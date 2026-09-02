@@ -1,0 +1,45 @@
+<!-- Diseña un formulario <form> con tres entradas <input> para nombre, correo y contraseña.
+    Aplica los atributos required, placeholder, minlength y maxlength. 
+    Incluye un área de texto <textarea> restringida a cambio de tamaño vertical 
+    (resize: vertical), un menú desplegable <select> 
+    con varias opciones <option> y agrupa los campos usando <fieldset> y <legend>. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="forms__container">
+        <form>
+            <fieldset>
+                <legend>Info</legend>
+                <div class="padding">
+                <input type="text"required minlength="3" maxlength="255"  placeholder="Nombre Completo">
+            </div>
+            <div class="padding">
+                <input type="email"required minlength="10" maxlength="255"  placeholder="juan@gmail.com">
+                </div>
+                <div class="padding">
+                    <input type="password"required minlength="3" maxlength="255"  placeholder="*************">       
+                </div>
+                <div class="padding">
+                <textarea required rows="7" placeholder="Ingrese Su Asunto">Gol
+                </textarea>
+                </div>
+            </fieldset>
+            <div class="padding">
+                <select>
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3">Opcion 3</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

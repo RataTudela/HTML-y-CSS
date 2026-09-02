@@ -1,0 +1,19 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+@support (display: flex) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }D
+}
+
+@support not (display: flex) {
+    body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+}

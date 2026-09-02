@@ -1,0 +1,138 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(210, 211, 211);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2 { 
+    text-wrap: balance; 
+}
+
+p { 
+    text-wrap: pretty; 
+}
+
+
+.header__nav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0; 
+    background-color: #5af;
+    width: 100%;
+}
+
+.list__item {
+    list-style: none;
+}
+
+.item__link {
+    display: block; 
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.item__link:hover {
+    background-color: rgb(140, 187, 245);
+    border-radius: 12px;
+}
+
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1; 
+    width: 100%;
+}
+
+.main-wrapper aside {
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.main-wrapper main {
+    flex: 2 1 300px;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.secondary__navbar {
+    background-color: rgb(176, 177, 177);
+    text-align: center;
+}
+
+.secondary__navbar h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.navbar__secondary ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list__itemsecond {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.item__linksecond {
+    text-decoration: none;
+    color: #5af;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__nav ul {
+        justify-content: center;
+    }
+    
+    .item__link {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-wrapper aside,
+    .main-wrapper main {
+        max-width: 100%;
+        width: 100%;
+    }
+}
