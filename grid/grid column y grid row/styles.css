@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    background-color: #3af;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.imagens__container{
+    margin: 30px;
+    min-width: 100px;
+    width: 400px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
+
+.grid__item{
+    background-color: rgb(167, 196, 216);
+    max-width: 100%;
+    font-size: 30px;
+    border-radius: 16px;
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_2X_875787-MLA99542540358_122025-F.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+/* .grid__item:first-child{ */
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4; */
+    /* SPAN */
+    /* grid-column-start: 2;
+    grid-row-start: 3;
+    grid-column-end: span 3;
+    grid-row-end: span 2; */
+    /* LA MEJOR FORMA */
+    /* grid-column: 2/span 2;
+    grid-row: 2/span 2;
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_2X_875787-MLA99542540358_122025-F.webp");
+    background-position: left center;
+    background-size: cover;
+} */
+
+.grid__item:first-child{
+    grid-column: 1/span 2;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .imagens__container{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

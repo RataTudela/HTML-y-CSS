@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de CSS Grid - Auto y Fr</title>
+    <!-- Vinculamos el archivo de estilos externos en el head [4] -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor general del diseño -->
+    <div class="contenedor-principal">
+        
+        <header class="cabecera">
+            <h1>Mi Sitio de Estudio</h1>
+        </header>
+        
+        <div class="layout-grid">
+            <!-- Barra lateral: usará 'auto' para medir solo lo que su texto requiera -->
+            <aside class="barra-lateral">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Temario CSS</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </aside>
+            
+            <!-- Bloque principal: usará '1fr' para estirarse en todo el espacio libre -->
+            <main class="contenido-principal">
+                <h2>Contenido Principal</h2>
+                <p>Este bloque tiene asignado <strong>1fr</strong> de ancho en nuestra rejilla. Eso significa que absorberá de manera flexible todo el espacio que sobre en el contenedor, después de que la barra lateral (que tiene <strong>auto</strong>) tome el espacio mínimo que necesita para mostrar sus enlaces de navegación.</p>
+            </main>
+        </div>
+
+        <footer class="pie-pagina">
+            <p>Estudio Personal - Benjamín Olavarría</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.tarjeta-wrapper {
+    container-type: inline-size;
+    container-name: tarjeta;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+@container tarjeta (max-width: 500px) {
+    .tarjeta {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,21 @@
+<!-- Utiliza la etiqueta <picture> junto con elementos <source> 
+    usando la regla media para intercambiar la imagen mostrada entre 
+    resoluciones móviles (max-width: 600px) y de escritorio.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <source srcset="gargantua.png" media="(min-width:1000px)">
+        <source srcset="gargantua-medium.png" media="(min-width:700px)">
+        <source srcset="gargantua-small.png" media="(min-width:300px)">
+        <img src="gargantua.png">
+    </picture>
+</body>
+</html>
