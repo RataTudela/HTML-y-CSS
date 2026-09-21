@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.box{
+    border: 2px solid #48e;
+    background-color: #Ffff;
+    margin: 20px;
+    padding: 6px;
+    border-radius: 30px;
+    transition: border 1s steps(50);
+}
+
+.box__bar{
+    width: 10%;
+    background-color: #48e;
+    border-radius: 30px;
+    padding: 40px;
+    transition: width 1s steps(50), background-color 1s steps(50);
+}   
+
+.box__bar:active{
+    width: 100%;
+    transition-duration: 1s;
+    background-color: #f00a;
+}
+
+.box:has(.box__bar:active){
+    transition-duration: 1s;
+    border: 2px solid #f00a;
+}
+
+
+@media (prefers-reduced-motion: reduce){
+    .barra, .box{
+        transition: width 5s, border 5s;
+    }
+}

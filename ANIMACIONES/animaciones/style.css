@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.box{
+    border: 2px solid #48e;
+    background-color: #Ffff;
+    margin: 20px;
+    padding: 6px;
+    border-radius: 30px;
+}
+
+.box__bar{
+    width: 10%;
+    background-color: #48e;
+    border-radius: 30px;
+    padding: 40px;
+    animation: rellenar 1s linear;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}   
+
+
+@keyframes rellenar {
+    from{
+        width: 0%;
+        background-color: #f33;
+    }to{
+        width: 100%;
+        background-color: #f11;
+    }
+}

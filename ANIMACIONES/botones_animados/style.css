@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    background-color: black;
+    position: relative;
+}
+img {
+    position: absolute;
+    z-index: -2;
+    width: 150px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: movimiento 15s alternate infinite;
+}
+
+iframe{
+    display: none;
+}
+@keyframes movimiento {
+    0% {
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    20% {
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+    30% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    40% {
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    60% {
+        top: 0%;
+        left: 50%;
+    }
+    70% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    80% {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    padding: 10px 40px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 3px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    position: relative;
+}
+
+.btn1{
+    border: 1px solid #48e;
+    overflow: hidden;
+}
+
+.btn1::before{
+    content: '';
+    background-color: #48e;
+    display: block;
+    height: 200%;
+    width: 140%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    top: 100%;
+    left: 30%;
+    transition: top .6s, left .6s;
+}
+.btn1:hover::before{
+    top: 20%;
+    left: 20%;
+}
+
+.wrapper:has(.btn2:hover){
+    filter: drop-shadow(0px 0px 25px #48e);
+}
+
+
+
+
+/* BOTON 2 */
+
+.btn2{
+    border: 1px solid #fff3;
+    color: #fff3;
+    position: relative;
+}
+
+.btn2:hover {
+    border-color: #48e;
+    color: #48e;
+    filter: drop-shadow(0 0 2px #fff) 
+            drop-shadow(0 0 10px #48e) 
+            drop-shadow(0 0 25px #48e);
+    animation: parpadear 1.2s infinite alternate backwards;
+}
+
+@keyframes parpadear{
+    0%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: 0px;
+        box-shadow: 0px;
+    }
+    25%{
+        border: 1px solid rgb(111,168,255,0.3);
+        color: rgb(111,168,255);
+        text-shadow: 0px 0px 9px #48ee, 0px 0px 3px rgba(150,197,255,0.444);
+    }
+    45%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    60%{
+        border-color: #48e;
+        color: rgb(111,168,255, 0.3);
+        box-shadow: 0px 0px 6px #48e4, 0px 0px 16px rgba(39, 113, 204, 0.333);
+    }
+    76%{
+        color: #fff3;
+        border: 1px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+    100%{
+        border: 1px solid rgb(111,168,255,0.3);
+        color: rgb(111,168,255);
+        text-shadow: 0px 0px 9px #48ee, 0px 0px 3px rgba(150,197,255,0.444);
+    }
+}
+
+.btn2::before{
+    content: '';
+    background-color: #48e;
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: -1;
+    top: -26px;
+    opacity: 0;
+    transition: top .6s, opacity 0.6s;
+    animation: parpadear-linea 3s alternate infinite;
+}
+
+.btn2:hover::before{
+    opacity: 1;
+    top: -6px;
+}
+
+
+.btn2::after{
+    content: '';
+    background-color: #48e;
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    opacity: 0;
+    top: -28px;
+    transition: top .6s, opacity .6s;
+    animation: parpadear-linea 3s alternate-reverse infinite;
+}
+
+.btn2:hover::after{
+    top: -9px;
+    opacity: 1;
+
+}
+
+@keyframes parpadear-linea{
+    0%{
+        background-color: #48e;
+        box-shadow: 0px 0px 9px #48ee, 0px 0px 3px rgba(150,197,255,0.444);
+    }
+    25%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    45%{
+        background-color: #48e;
+        box-shadow: 0px 0px 9px #48ee, 0px 0px 3px rgba(150,197,255,0.444);
+    }
+    60%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+    76%{
+        background-color: #48e;
+        box-shadow: 0px 0px 9px #48ee, 0px 0px 3px rgba(150,197,255,0.444);
+    }
+    100%{
+        background-color: #fff3;
+        box-shadow: none;
+    }
+}
