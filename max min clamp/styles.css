@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+:root{
+    --color-principal:#f00;
+    --color-texto: #ffff;
+    --titulos-tamaño: 8rem;
+}
+.box{
+    background-color: var(--color-principal);
+    display: grid;
+    place-content: left;
+    color: #fff;
+    font-size: 30px;
+    margin: 120px auto;
+    padding: 20px;
+    border: 6px solid black;
+    font-size: clamp(2.4rem, 2.2vw, 4rem);
+    color: var(--color-texto);
+}
+
+h1, h2{
+    font-size: var(--titulos-tamaño);
+}

@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #48e;
+}
+
+:root{
+    --color-principal:transparent;
+    --color-texto: #ffff;
+    --titulos-tamaño: 8rem;
+    --box-height: 200px;
+}
+.box{
+    font-size: 30px;
+    padding: 0px 40px;
+    font-size: clamp(1.2rem, 2.2vw, 4rem);
+    border: 6px solid black;
+}
+
+
+.box:first-child{
+    height: var(--box-height);
+}
+
+.box:nth-child(2){
+    height: calc(100vh - var(--box-height));
+    overflow: auto;
+}

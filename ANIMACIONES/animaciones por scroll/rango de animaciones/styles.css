@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.crecedor{
+    height: 100vh;
+}
+.box {
+    view-timeline:--cajita block;
+    background-color: #48e;
+    padding: 20px;
+
+    animation-name: rellenar;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: --cajita;
+    animation-range: contain 40% cover 70%;
+}
+.container{
+
+}
+
+@keyframes rellenar {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

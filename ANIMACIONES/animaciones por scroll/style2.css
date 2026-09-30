@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.crecedor{
+    height: 100vh;
+}
+
+.box{
+    background-color: #48e;
+    padding: 20px;
+    animation: rellenar linear;
+    animation-timeline: view();
+}
+.container{
+
+}
+
+@keyframes rellenar {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+        background-color: #f00;
+    }
+}

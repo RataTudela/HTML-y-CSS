@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    height: 300vh; /* Mayor recorrido para el scroll */
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/* ===================================================
+   CUBOS 3D DE FONDO (ACERCÁNDOSE AL HACER SCROLL)
+   =================================================== */
+
+.cubes-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px; /* Profundidad 3D */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cube {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+}
+
+/* Caras de los cubos */
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0, 242, 254, 0.4);
+    background: rgba(0, 242, 254, 0.05);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+}
+
+.front  { transform: translateZ(30px); }
+.back   { transform: rotateY(180deg) translateZ(30px); }
+.right  { transform: rotateY(90deg) translateZ(30px); }
+.left   { transform: rotateY(-90deg) translateZ(30px); }
+.top    { transform: rotateX(90deg) translateZ(30px); }
+.bottom { transform: rotateX(-90deg) translateZ(30px); }
+
+/* Posiciones iniciales de cada cubo alrededor del centro */
+.c1 { top: 15%; left: 10%; animation: zoomCube1 linear both; animation-timeline: scroll(); }
+.c2 { top: 70%; left: 15%; animation: zoomCube2 linear both; animation-timeline: scroll(); }
+.c3 { top: 20%; right: 12%; animation: zoomCube3 linear both; animation-timeline: scroll(); }
+.c4 { top: 75%; right: 10%; animation: zoomCube4 linear both; animation-timeline: scroll(); }
+
+/* Keyframes: Los cubos inician al fondo (Z negativo) y avanzan rompiendo la pantalla */
+@keyframes zoomCube1 {
+    0%   { transform: translateZ(-800px) rotateX(0deg) rotateY(0deg); opacity: 0.2; }
+    100% { transform: translateZ(600px) rotateX(360deg) rotateY(180deg); opacity: 1; }
+}
+
+@keyframes zoomCube2 {
+    0%   { transform: translateZ(-1000px) rotateX(0deg) rotateY(0deg); opacity: 0.1; }
+    100% { transform: translateZ(500px) rotateX(-180deg) rotateY(360deg); opacity: 0.9; }
+}
+
+@keyframes zoomCube3 {
+    0%   { transform: translateZ(-600px) rotateX(0deg) rotateY(0deg); opacity: 0.3; }
+    100% { transform: translateZ(700px) rotateX(270deg) rotateY(-180deg); opacity: 1; }
+}
+
+@keyframes zoomCube4 {
+    0%   { transform: translateZ(-1200px) rotateX(0deg) rotateY(0deg); opacity: 0.1; }
+    100% { transform: translateZ(550px) rotateX(-360deg) rotateY(-360deg); opacity: 0.8; }
+}
+
+/* ===================================================
+   TRIÁNGULOS EN VÓRTICE (CAPA INTERMEDIA)
+   =================================================== */
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.polygon {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    will-change: transform, opacity;
+}
+
+.top {
+    top: 0; left: 0;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(135deg, #070707 0%, #000000 100%);
+    filter: drop-shadow(0px 0px 20px rgba(3, 3, 3, 0.6));
+    animation: vortexOutTop linear both;
+    animation-timeline: scroll();
+}
+
+.right {
+    top: 0; left: 0;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background: linear-gradient(135deg, #070707 0%, #000000 100%);
+    filter: drop-shadow(0px 0px 20px rgba(3, 3, 3, 0.6));
+    animation: vortexOutRight linear both;
+    animation-timeline: scroll();
+}
+
+.left {
+    top: 0; left: 0;
+    clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+    background: linear-gradient(135deg, #070707 0%, #000000 100%);
+    filter: drop-shadow(0px 0px 20px rgba(3, 3, 3, 0.6));
+    animation: vortexOutLeft linear both;
+    animation-timeline: scroll();
+}
+
+.bottom {
+    top: 0; left: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    background: linear-gradient(135deg, #070707 0%, #000000 100%);
+    filter: drop-shadow(0px 0px 20px rgba(3, 3, 3, 0.6));
+    animation: vortexOutBottom linear both;
+    animation-timeline: scroll();
+}
+
+@keyframes vortexOutTop {
+    0%   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(-200px, -700px) rotate(-540deg) scale(3.5); opacity: 0; }
+}
+
+@keyframes vortexOutBottom {
+    0%   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(200px, 700px) rotate(-540deg) scale(3.5); opacity: 0; }
+}
+
+@keyframes vortexOutLeft {
+    0%   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(-700px, 200px) rotate(540deg) scale(3.5); opacity: 0; }
+}
+
+@keyframes vortexOutRight {
+    0%   { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(700px, -200px) rotate(540deg) scale(3.5); opacity: 0; }
+}
+
+.text-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: #fdfdfd;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(0px 0px 15px #020202)
+            drop-shadow(0px 0px 3px #070707)
+            drop-shadow(0px 0px 12px rgba(10, 10, 10, 0.8));
+    animation: textReveal linear both;
+    animation-timeline: scroll();
+}
+
+.text::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #000000;
+    animation: titilar 0.8s infinite alternate;
+}
+
+@keyframes textReveal {
+    0%   { width: 0%; opacity: 0; }
+    15%  { opacity: 1; }
+    100% { width: 100%; opacity: 1; }
+}
+
+@keyframes titilar {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}

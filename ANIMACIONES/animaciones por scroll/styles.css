@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #000000dd;
+    box-sizing: border-box;
+    height: 200vh;
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+}
+
+.relleno{
+    padding: 40px;
+    width: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 15px #fff)
+    drop-shadow(0px 0px 3px #fff);
+    animation: relleno;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+}
+
+@keyframes relleno {
+    from{
+        width: 10%;
+    }to{
+        width: 100%;
+        background-color: rgb(199, 199, 255);
+    }
+}

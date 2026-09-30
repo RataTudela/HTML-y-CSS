@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box{
+    font-size: 30px;
+    padding: 0px 40px;
+    overflow: scroll;
+    width: 50vh;
+    border: 6px solid #000;
+    height: 100vh;
+    scroll-behavior: smooth;
+    scrollbar-color: #48e #fff;
+    scrollbar-width: auto;
+}
+
+.crecer{
+    height: 200vh;
+}
+
+p::first-letter{
+    initial-letter:3 2;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: #f00;
+    font-family: sans-serif;
+}
